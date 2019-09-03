@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+
+<div ng-app="myApp"  ng-controller="myCtrl">
+<div id="container_demo" >
+	<div id="wrapper">
+		 <div id="login" class="login">  
+		 
+		 <style>
+body {background-image:url("C:/Users/Public/Pictures/Sample Pictures/Jellyfish.jpg");
+
+}
+h1   {color: blue;}
+p    {color: red;}
+
+
+
+.loginBox
+{
+	
+position: absolute;
+	
+top: 50%;
+	
+left:50%;
+	
+transform: translate(-50%, -50%);
+
+width: 350px;
+
+height: 420px;
+	
+padding: 80px 40px;
+	
+box-sizing: 
+border-box;
+	
+background: rgba(0,0,0,.5);
+
+}
+
+
+</style>
+	<body>		<!-- <form  action="mysuperscript.php" autocomplete="on">  -->
+<h1 align= "center">Log in</h1> 
+
+<div id= abc align="center" class="loginBox">
+<form>
+				<p> 
+					<label for="username" class="uname" ng-model= "username" align="center-left" >Username:  </label>
+			
+				
+					<input id="username" name="username" required="required"  type="text" ng-model="username" />
+				</p>
+				<p> 
+					<label for="password" class="youpasswd" ng-model="password" align="center" >Password: </label>
+					
+					<input id="password" name="password" required="required" type="password"  ng-model="password"/> 
+					
+				</p>
+				
+				<p class="login button"> 
+					<input type="submit" value="Login" /> 
+				</p>
+				<p class="change_link">
+					Not a member yet ?
+					<a href="#toregister" class="to_register">SIGN UP</a>
+				</p></form>
+</body>	
+	</div></div>
+</div> 
+</div>
+
+</html> 
+
+
+<script>
+
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.username = "swetha";
+    $scope.password = "swetha";
+});
+
+</script>
+
+
+
+
+
+
+
